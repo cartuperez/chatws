@@ -26,3 +26,9 @@ Se mantiene el formato JSON `usuario`, `contenido`, `tipo` (`JOIN`, `CHAT`, `LEA
 Pruebas: `.\mvnw.cmd test`. La prueba manual con dos pestañas verifica el recorrido completo del cliente SockJS/STOMP. Las bibliotecas del navegador se descargan desde jsDelivr y requieren acceso a Internet.
 
 Referencia: [WebSocket/STOMP en Spring](https://docs.spring.io/spring-framework/reference/web/websocket/stomp.html).
+
+Con el servidor ejecutándose, Node.js 22 o superior permite comprobar dos clientes STOMP, los ingresos, los mensajes y la salida:
+
+```powershell
+node scripts/verify-chat.mjs 8080
+```
